@@ -3,7 +3,7 @@ const controller = require('../controllers/ProjectController')
 const middleware = require('../middleware')
 
 router.get('/', controller.GetProjects)
-router.project(
+router.post(
   '/',
   middleware.stripToken,
   middleware.verifyToken,
