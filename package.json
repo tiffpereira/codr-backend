@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node App.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "sequelize-cli db:migrate",
+    "seed": "sequelize-cli db:seed:all",
+    "postdeploy": "npm run migrate && npm run seed"
   },
   "repository": {
     "type": "git",
