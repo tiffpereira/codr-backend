@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node App.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "npm rebuild bcrypt --update-binary"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -21,7 +20,7 @@
   "homepage": "https://github.com/RTSY-P3/codrBackend#readme",
   "dependencies": {
     "@ngneat/falso": "^4.0.0",
-    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "morgan": "^1.10.0",
