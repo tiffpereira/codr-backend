@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const logger = require('morgan')
+require('dotenv').config()
 const bodyParser = require('body-parser')
 const AuthRouter = require('./routes/AuthRouter')
 const ProjectRouter = require('./routes/ProjectRouter')
